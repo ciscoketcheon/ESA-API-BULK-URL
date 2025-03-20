@@ -92,6 +92,7 @@ Example dictionary of "1-URL-Blocklist" in ESA, create one and update dictionary
 ![](bulk1.jpg)
 
 Configure script
+
 ![](bulk2.jpg)
 
 Run the script
@@ -119,6 +120,7 @@ MID 10009 Custom Log Entry: *** Bad URL list hit***
 ```
 
 Email processed and convicted:-
+
 ![](bulk5.jpg)
 
 
