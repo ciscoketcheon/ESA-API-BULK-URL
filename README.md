@@ -26,12 +26,12 @@ Setup
 
 1. Clone the repository:
 ```
-git clone https://github.com/your-repo/esa-api-script.git
-cd esa-api-script
+git clone https://github.com/ciscoketcheon/ESA-API-BULK-URL.git
+cd ESA-API-BULK-URL
 ```
 2. Install dependencies:
 ```
-pip install -r requirements.txt
+pip install requests
 ```
 ## Configuration
 
@@ -58,13 +58,13 @@ Run the script
 
 Execute the script with:
 ```
-python esa_api_script.py
+python bulk_url.py
 ```
 Example Output
 ```
 Attempting login with encoded credentials...
 Login successful!
-Successfully added words to MyDictionary
+Successfully added words to mydictionary
 ```
 ## Troubleshooting
 
@@ -88,9 +88,38 @@ If unexpected errors occur, inspect the API responses in the script output.
 
 ## How do I know it works?
 
-Sample notification email received, I was monitoring Alpha and Bravo's mailboxes; looking out for BEC verdict:-
+Example dictionary of "1-URL-Blocklist" in ESA, create one and update dictionary name in the script
+![](bulk1.jpg)
 
-![](notification.jpg)
+Configure script
+![](bulk2.jpg)
+
+Run the script
+```
+$ python3 bulk_url.py 
+Attempting login with encoded credentials...
+Login successful!
+Successfully added words to 1-URL-Blocklist
+```
+
+Check back the dictionary on ESA, it's updated.
+![](bulk3.jpg)
+
+Further email test, sample content filter to use the URL list
+![](bulk4.jpg)
+
+Send a test email containing the URL, example of using `swaks`:-
+```
+$ swaks --server x.x.x.x --to recipient@xxxxxx --from test@test.com --body "Hi, click this -> https://badurl.com"
+```
+
+Logs on ESA
+```
+MID 10009 Custom Log Entry: *** Bad URL list hit***
+```
+
+Email processed and convicted:-
+![](bulk5.jpg)
 
 
 
