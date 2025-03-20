@@ -106,7 +106,7 @@ Successfully added words to 1-URL-Blocklist
 Check back the dictionary on ESA, it's updated.
 ![](bulk3.jpg)
 
-Further email test, sample content filter to use the URL list
+Further email test, sample content filter to match URL in the dictionary, and modify subject and add custom log:-
 ![](bulk4.jpg)
 
 Send a test email containing the URL, example of using `swaks`:-
