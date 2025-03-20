@@ -4,28 +4,23 @@
 
 This Python script automates interactions with the Cisco Email Security Appliance (ESA) API, allowing users to:
 
-Authenticate and retrieve a JWT token
-
-Fetch available dictionaries
-
-Add words to a specified dictionary
+- Authenticate and retrieve a JWT token
+- Fetch available dictionaries
+- Add words to a specified dictionary
 
 ## Features
 
-Base64 Encoding: Automatically encodes username and password.
-
-Customizable Inputs: User-configurable ESA hostname, credentials, dictionary name, and words.
-
-CSV-style Input for Words: Words can be provided in a simple comma-separated format.
-
-Handles HTTP 200 & 201 as Success: Ensures API requests are validated correctly.
+- Base64 Encoding: Automatically encodes username and password.
+- Customizable Inputs: User-configurable ESA hostname, credentials, dictionary name, and words.
+- CSV-style Input for Words: Words can be provided in a simple comma-separated format.
+- Handles HTTP 200 & 201 as Success: Ensures API requests are validated correctly.
 
 ## Installation
 
 Prerequisites
 
 - Python 3.x
-- requests library (install using pip install requests)
+- `requests` library (install using `pip install requests`)
 
 Setup
 
@@ -50,11 +45,11 @@ DICTIONARY_NAME = "mydictionary"  # Dictionary to update
 
 WORDS_TO_ADD_CSV = "url1.com, testing.com"  # Comma-separated words
 ```
-- ESA_HOST: The IP address or hostname of your ESA.
-- USERNAME: ESA API username (will be Base64-encoded automatically).
-- PASSWORD: ESA API password (will be Base64-encoded automatically).
-- DICTIONARY_NAME: The name of the dictionary you want to update.
-- WORDS_TO_ADD_CSV: Words to add in a comma-separated format.
+- `ESA_HOST`: The IP address or hostname of your ESA.
+- `USERNAME`: ESA API username (will be Base64-encoded automatically).
+- `PASSWORD`: ESA API password (will be Base64-encoded automatically).
+- `DICTIONARY_NAME`: The name of the dictionary you want to update.
+- `WORDS_TO_ADD_CSV`: Words to add in a comma-separated format.
   - Format: word or word:score:option (e.g., *credit:2:prefix).
 
 ## Usage
@@ -75,9 +70,8 @@ Successfully added words to MyDictionary
 
 Invalid Credentials
 
-Ensure you have the correct username/password.
-
-Manually verify Base64 encoding with:
+- Ensure you have the correct username/password.
+- Manually verify Base64 encoding with:
 ```
 echo -n "your-username" | base64
 echo -n "your-password" | base64
@@ -90,6 +84,25 @@ Connection Issues
 Debugging API Responses
 
 If unexpected errors occur, inspect the API responses in the script output.
+
+
+## How do I know it works?
+
+Sample notification email received, I was monitoring Alpha and Bravo's mailboxes; looking out for BEC verdict:-
+
+![](notification.jpg)
+
+
+
+## References and userful links
+
+- ETD Guide -> https://www.cisco.com/c/en/us/td/docs/security/email-threat-defense/user-guide/secure-email-threat-defense-user-guide/intro.html
+
+- ETD API Guide -> https://developer.cisco.com/docs/message-search-api/
+
+
+
+
 
 ## License
 
