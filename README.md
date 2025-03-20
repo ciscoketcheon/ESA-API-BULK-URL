@@ -1,12 +1,12 @@
-# ESA API Automation Script
+# ESA Bulk URL Script
 
 ## Overview
 
 This Python script automates interactions with the Cisco Email Security Appliance (ESA) API, allowing users to:
 
-- Authenticate and retrieve a JWT token
-- Fetch available dictionaries
-- Add words to a specified dictionary
+- Authenticate and retrieve a JWT token from ESA
+- Fetch available ESA dictionaries
+- Add URLs (or words) into a dictionary
 
 ## Features
 
