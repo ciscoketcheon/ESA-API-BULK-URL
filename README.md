@@ -127,21 +127,10 @@ Email processed and convicted:-
 
 ## References and userful links
 
-- ETD Guide -> https://www.cisco.com/c/en/us/td/docs/security/email-threat-defense/user-guide/secure-email-threat-defense-user-guide/intro.html
+- ESA API Guide (v16.x) -> https://www.cisco.com/c/en/us/td/docs/security/esa/esa16-0/api_guide/b_Secure_Email_API_Guide_16-0.html
 
-- ETD API Guide -> https://developer.cisco.com/docs/message-search-api/
+- ESA API Schema -> https://www.cisco.com/c/dam/en/us/td/docs/security/esa/esa15-0/api_guide/AsyncOS-15-0-API-Addendum.xlsx
 
-
-
-
-
-## License
-
-This script is open-source and available under the MIT License.
-
-Contributions
-
-Feel free to submit pull requests or issues via GitHub.
 
 
 
